@@ -12,3 +12,8 @@ wheels/
 # uv local cache / managed Python downloads
 .uv-cache/
 .uv-python/
+
+# Local environment files
+.env
+.env.local
+.env.*.local
