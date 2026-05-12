@@ -69,3 +69,27 @@ sh .codex/local-environment/verify.macos.sh
 ```
 
 The verify script runs bytecode compilation and the test suite.
+
+## Clean
+
+Windows:
+
+```powershell
+.\.codex\local-environment\clean.ps1
+```
+
+Linux:
+
+```sh
+sh .codex/local-environment/clean.sh
+```
+
+macOS:
+
+```sh
+sh .codex/local-environment/clean.macos.sh
+```
+
+The clean script removes local generated artifacts, including `.venv`, `.uv-cache`,
+`.uv-python`, test/type-check caches, build outputs, `__pycache__`, and
+`*.egg-info`. It does not remove source files, docs, `.env` files, data, or logs.

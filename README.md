@@ -39,3 +39,15 @@ On macOS:
 ```sh
 sh .codex/local-environment/verify.macos.sh
 ```
+
+Clean all local generated environment artifacts:
+
+```powershell
+.\.codex\local-environment\clean.ps1
+```
+
+On macOS:
+
+```sh
+sh .codex/local-environment/clean.macos.sh
+```
