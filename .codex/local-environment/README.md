@@ -10,10 +10,16 @@ Windows:
 .\.codex\local-environment\setup.ps1
 ```
 
-Linux/macOS:
+Linux:
 
 ```sh
 sh .codex/local-environment/setup.sh
+```
+
+macOS:
+
+```sh
+sh .codex/local-environment/setup.macos.sh
 ```
 
 The setup script:
@@ -36,6 +42,12 @@ or:
 CODEX_UV_ALLOW_LOCK_UPDATE=1 sh .codex/local-environment/setup.sh
 ```
 
+macOS can use the same override:
+
+```sh
+CODEX_UV_ALLOW_LOCK_UPDATE=1 sh .codex/local-environment/setup.macos.sh
+```
+
 ## Verify
 
 Windows:
@@ -44,10 +56,16 @@ Windows:
 .\.codex\local-environment\verify.ps1
 ```
 
-Linux/macOS:
+Linux:
 
 ```sh
 sh .codex/local-environment/verify.sh
+```
+
+macOS:
+
+```sh
+sh .codex/local-environment/verify.macos.sh
 ```
 
 The verify script runs bytecode compilation and the test suite.

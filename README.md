@@ -22,8 +22,20 @@ Prepare this project for Codex or a fresh local worktree:
 .\.codex\local-environment\setup.ps1
 ```
 
+On macOS:
+
+```sh
+sh .codex/local-environment/setup.macos.sh
+```
+
 Run validation:
 
 ```powershell
 .\.codex\local-environment\verify.ps1
+```
+
+On macOS:
+
+```sh
+sh .codex/local-environment/verify.macos.sh
 ```
