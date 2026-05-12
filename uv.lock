@@ -334,10 +334,6 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "isort" },
-]
-
-[package.dev-dependencies]
-dev = [
     { name = "pytest" },
 ]
 
@@ -349,7 +345,7 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "isort", specifier = ">=8.0.1" }]
-
-[package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.0,<9.0" }]
+dev = [
+    { name = "isort", specifier = ">=8.0.1" },
+    { name = "pytest", specifier = ">=8.0,<9.0" },
+]
