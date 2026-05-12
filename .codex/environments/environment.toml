@@ -22,3 +22,15 @@ script = '''
 .\.codex\local-environment\setup.ps1 -AllowLockUpdate
 .\.codex\local-environment\verify.ps1
 '''
+
+[cleanup]
+script = ""
+
+[cleanup.darwin]
+script = "sh .codex/local-environment/clean.macos.sh"
+
+[cleanup.linux]
+script = "sh .codex/local-environment/clean.sh"
+
+[cleanup.win32]
+script = ".\\.codex\\local-environment\\clean.ps1"
