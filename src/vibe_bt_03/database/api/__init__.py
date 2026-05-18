@@ -1,12 +1,14 @@
 """Public database API boundary."""
 
 from vibe_bt_03.database.api.manage import (
+    DatabaseHealth,
     check_database_connection,
     configure_database,
     create_all_tables,
     database_transaction,
     dispose_database,
     drop_all_tables,
+    get_database_health,
     reset_database,
 )
 from vibe_bt_03.database.api.types import (
@@ -29,6 +31,7 @@ __all__ = [
     "AssetView",
     "CalendarSessionInput",
     "CalendarSessionView",
+    "DatabaseHealth",
     "FutureDailyBarInput",
     "FutureDailyBarView",
     "InstrumentInput",
@@ -43,5 +46,6 @@ __all__ = [
     "database_transaction",
     "dispose_database",
     "drop_all_tables",
+    "get_database_health",
     "reset_database",
 ]

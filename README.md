@@ -14,6 +14,24 @@ uv sync
 uv run vibe-bt-03
 ```
 
+## Database manage API
+
+Database management helpers are exported from `vibe_bt_03.database.api`.
+
+```python
+from vibe_bt_03.database.api import (
+    configure_database,
+    create_all_tables,
+    get_database_health,
+)
+
+configure_database("sqlite+pysqlite:///research.db")
+create_all_tables()
+
+health = get_database_health()
+assert health.ok
+```
+
 ## Codex local environment
 
 Prepare this project for Codex or a fresh local worktree:
